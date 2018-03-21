@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<title>ThymLerio Mobile Web Developer</title>
+
+<style type="text/css">
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+
+	text-align: left;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #CCCCCC;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a {
+    font-size:  17px;
+    font-family: serif;
+}
+
+a:visited {
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #CCCCCC;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 100%;
+	margin: auto;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+
+
+ #indexheadertitle {
+	text-shadow: 0px 0px #000;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #000;
+	font-size: 24px;
+	text-align: left;
+  margin-top: 30px;
+  width:100%;
+  float:left;
+	background: 0000;
+}
+
+div#socialmediaindexlink {
+    margin-top: 20px;
+}
+
+a#twitterimage {
+    margin-left: 11px;
+}
+
+img#tweets {
+    margin-right: 15px;
+}
+
+
+.header div p {
+    float:left;
+    width:33.33333333333333%;
+}
+.header .center {
+    text-align:center;
+}
+
+.header .right {
+    text-align:right;
+}
+.header span a {
+    display:block;
+}
+
+
+
+/* ~~ This is the layout information. ~~
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	margin: auto;
+	color: #FFF;
+	font-weight: bold;
+	font-family: Georgia, Arial, sans-serif;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: ffff;
+}
+
+
+
+.container .content #home #hometable {
+	background-image: url(Images/backgroundhome.JPG);
+
+}
+
+
+body,td,th {
+	color: 0000;
+	font-family: "Brush Script MT Italic", Mistral;
+	font-size: 16px;
+	text-shadow: 1px 1px 0px #600000;
+	text-align: center;
+}
+
+
+.container .footer p {
+	color: #FFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+
+
+
+a:hover {
+	color: #FFFFFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: normal;
+	text-align: center;
+	font-size: 16px;
+}
+
+
+.container .content div .container {
+	text-align: center;
+}
+
+
+
+.container .footer p {
+	color: #500;
+	text-shadow: 0px 0px #000;
+	font-size: small;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p#titleindex {
+    margin-top: 18px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+<div class="container">
+	<header>
+    <div class="row">
+      <div class="left col-xs-10">
+       <p id="indexheadertitle">ThymLerio</p>
+      </div>
+      <div id="socialmediaindexlink" class="left col-xs-2">
+				<a id="linkedinimage" href="https://www.linkedin.com/in/thymlerio/" target="_blank"><img id="linked" src="Images/linkedinlogo.png" width="20" height="20" border="0"></a>
+				<a id="twitterimage" href=""><img id="tweets" src="Images/twittericon.png" width="20" height="20" border="0"></a>
+				<a id="mediumimage" href="https://medium.com/@ojie2k5" target="_blank"><img id="medium" src="Images/mediumlogofilled.png" width="20" height="20" border="0"></a>
+
+		  </div>
+    </div>
+    <div class="clearfix"></div>
+  </header>
+
+
+  <div class="content">
+    <div align="center" id="home">
+      <table width="100%" height="515" border="0" align="center" cellpadding="0" cellspacing="0" class="active" id="hometable">
+        <tr>
+
+          <th width="120" scope="col"><a href="indexvideo.html">Films </a></th>
+          <th width="190" scope="col"><a href="indexphoto.html">Photography</a> </th>
+					<th width="210" scope="col" id="softwareengineerbackground"><a id="softengineer" href="softwareengineer.html">Web & Mobile Developer</a></th>
+          <th width="200" scope="col"><a href="aboutme.html">About Me</a></th>
+          <th width="120" scope="col"><a href="contacts.html">Contacts</a></th>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+  <div class="footer">
+    <p align="center"><strong>Thymlerio &copy; Copyright 2018.</strong></p>
+<div align="center">
+      <!-- end .footer -->
+    </div>
+  </div>
+  <div align="center">
+    <!-- end .container -->
+  </div>
+</div>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA6dZjt4Kr2KMBj5JavbFd-N2bxw5qb6zE",
+    authDomain: "thymlerio.firebaseapp.com",
+    databaseURL: "https://thymlerio.firebaseio.com",
+    projectId: "thymlerio",
+    storageBucket: "",
+    messagingSenderId: "1018453028253"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>
